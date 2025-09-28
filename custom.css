@@ -1,0 +1,88 @@
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    justify-content: center !important;
+}
+
+.navbar .container {
+    justify-content: center !important;
+    padding: 5px 10px !important;
+    border-radius: 12px !important;
+    background-color: #f8f8f8d6;
+    border: 1.5px solid #d7d7d7;
+
+
+}
+
+.navbar-collapse {
+    justify-content: center !important;
+}
+
+.logo {
+    color: #333;
+    font-family: 'Nunito';
+    text-transform: uppercase !important;
+    font-size: 18px;
+}
+
+.navbar-nav li a {
+    color: #2e2e2e;
+    transition: color 0.3s ease;
+
+}
+
+
+.navbar-nav li a:hover {
+    color: #5a2eac;
+}
+
+
+
+.hire-btn {
+    padding: 9px 20px;
+    border-radius: 9px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #172a4a;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #fab607;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.hero-section h1 {
+
+
+}
+
+.hero-section .hero-container p {
+    font-size: 16px;
+    color: #424141;
+    max-width: 470px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width:575px) {
+    .nav-cont {
+        max-width: 400px;
+    }
+}
+
+@media (max-width:415px) {
+    .nav-cont {
+        max-width: 330px;
+    }
+}

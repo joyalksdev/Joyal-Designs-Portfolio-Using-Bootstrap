@@ -1,5 +1,6 @@
 body {
     padding-top: 80px;
+    font-family: 'Plus Jakarta Sans';
 }
 
 .navbar {
@@ -25,6 +26,7 @@ body {
     font-family: 'Nunito';
     text-transform: uppercase !important;
     font-size: 18px;
+    padding: 0px 9px;
 }
 
 .navbar-nav li a {
@@ -59,7 +61,10 @@ body {
 
 
 .hero-section h1 {
-
+    max-width: 600px;
+    font-family: "Bebas Neue";   
+    font-weight: 400;
+    font-size: 100px;
 
 }
 

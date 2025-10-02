@@ -1,86 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Website Title -->
-  <title>Joyal Designs Portfolio</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title -->
+    <title>Joyal Designs Portfolio</title>
 
-  <!-- Bootstrap CSS Linking -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap CSS Linking -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
 
-  <!-- Googe Fonts Nunito, Bebas Nue And Plus Jarkarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet">
+    <!-- Googe Fonts Nunito, Bebas Nue And Plus Jarkarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet">
 
-  <!-- Custom CSS linking -->
-  <link rel="stylesheet" href="custom.css">
+    <!-- Custom CSS linking -->
+    <link rel="stylesheet" href="custom.css">
 
-</head>
+  </head>
+  <body>
 
-<!-- Header and Navigation -->
+    <!-- Header and Navigation -->
 
-<header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top mt-3">
-    <div class="container nav-cont">
-      <a href="index.html" class="logo navbar-brand me-auto fw-bold">Joyal Designs</a>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top mt-3">
+        <div class="container nav-cont px-5">
+          <!-- logo -->
+          <a href="index.html" class="logo navbar-brand me-auto fw-bold">Joyal
+            Designs</a>
+          <!-- Hamburger Menu for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span>
+          </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
-          class="navbar-toggler-icon"></span>
-      </button>
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  gap-sm-2 gap-md-5 text-center">
 
-        <ul class="navbar-nav  gap-sm-2 gap-md-5 text-center">
+              <li class="nav-item">
+                <a href="#about" class="nav-link fw-semibold">About Me</a>
+              </li>
 
-          <li class="nav-item">
-            <a href="#about" class="nav-link ">About Me</a>
-          </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link fw-semibold">Projects</a>
+              </li>
 
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link fw-semibold">Contact</a>
+              </li>
 
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
+            </ul>
+          </div>
 
-        </ul>
+          <!-- Hire Me Button (visible on desktop only) -->
+          <a href="#contact"
+            class="hire-btn btn btn-success d-none d-md-block d-lg-block">Hire
+            me</a>
+
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <!-- Hero Section -->
+
+      <div
+        class="hero-section container mt-5 pt-5 text-center d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center lh-1">WANNA KNOW ABOUT ME</h1>
+        <p class="text-center fw-medium">Hi, <strong>I’m Joyal.</strong> A
+          designer who blends
+          creativity and functionality to bring <strong>ideas to
+            life</strong> through engaging and
+          <strong>meaningful design.</strong>
+        </p>
+
+        <!-- Scroll Down Button -->
+        <a class="scroll m-5" href="#about"> Learn more
+          <img src="images/icon/arrow_circle_down.svg"
+            alt="down-arrow-icon">
+        </a>
+
       </div>
 
-      <a href="#" class="hire-btn d-none d-md-block d-lg-block">Hire me</a>
+      <hr class="line">
+      <div class="spacer"></div>
+
+      <!-- About Section -->
+
+      <section id="about" class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center  g-5 py-5">
+
+          <!-- About Image -->
+          <div class="col-8 col-sm-8 col-md-5 col-lg-5 col-xxl-5">
+            <img class="d-block mx-lg-auto img-fluid"
+              style="border-radius:12px;" src="images/me2 - cropped.jpg"
+              alt="image of Joyal">
+          </div>
+
+          <!-- About Text -->
+          <div class="col-lg-6">
+            <h2 class="fs-2 fw-bold text-body-emphasis lh-1 mb-3">About me</h2>
+            <p class style="font-size: 20px;">
+              I’m a passionate <strong>graphic and web
+                designer</strong> with a strong eye for detail and a
+              love for <strong>clean, purposeful design</strong>.
+              I enjoy creating <strong>visually engaging</strong> and
+              <strong>user-friendly digital experiences</strong> that
+              bring ideas to life — from
+              <strong>branding</strong> and <strong>web
+                interfaces</strong> to <strong>creative
+                visuals</strong>.
+              Alongside design, I’m also learning the <strong>MERN
+                stack</strong>, exploring how to merge creativity
+              with development to build websites
+              that not only look good but also <strong>work
+                beautifully</strong>.
+              I love collaborating on
+              projects that solve <strong>real problems</strong>
+              and create <strong>meaningful value</strong>.
+            </p>
+
+            <a href="#projects"
+              class="btn btn-outline-success px-3 py-2 fw-semibold">View
+              Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line">
+      <div class="spacer"></div>
+
+      <!-- Prjoects Section -->
+      <section id="projects" class="container mt-5">
+
+        <h2 class="fs-2 fw-bold text-center">Projects</h2>
+
+        <div class="row mt-5 pt-3 g-5 d-flex justify-content-center">
+
+          <!-- Project - 1 -->
+          <div class=" col-sm-10 col-md-6 col-lg-3 col-xl-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/poster_project.png"
+                alt="poster-project-image">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">NGO Posters & Visual
+                  Identity</h5>
+                <p class="card-text">
+                  A vibrant set of posters and digital artworks
+                  designed for NGOs — combining bold colors, clear
+                  messaging, and cultural storytelling to connect with
+                  communities.
+                </p>
+                <a
+                  class="btn btn-primary d-flex justify-content-center prj-btn fw-bold"
+                  href="#">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project - 2 -->
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/website_project.png"
+                alt="poster-project-image">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Mariya Bhavanam Website
+                  design</h5>
+                <p class="card-text">
+                  A modern, responsive website crafted for Mariya
+                  Bhavanam Charitable Trust — built to be simple,
+                  accessible, and emotionally warm, reflecting the
+                  care they provide.
+                </p>
+                <a
+                  class="btn btn-primary d-flex justify-content-center prj-btn fw-bold"
+                  href="https://mariyabhavanam.org/"
+                  target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project - 3 -->
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-0">
+            <div class="card h-100">
+              <img class="card-img-top crd-img"
+                src="images/dashboard_project.png"
+                alt="poster-project-image">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Smart Admin Dashboard Design</h5>
+                <p class="card-text">
+                  A smart admin dashboard concept for old age home
+                  management — blending minimal UI with data-driven
+                  insights, AI-assisted features, and smooth
+                  navigation.
+                </p>
+                <a
+                  class="btn btn-primary d-flex justify-content-center prj-btn fw-bold"
+                  href="https://www.figma.com/design/gICV0emuAV19g3Jeoh48IW/Dashboard?node-id=226-145&t=VZAVYbaIsJtPUjeP-1"
+                  target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- View More Projects Button -->
+
+          <div class="text-center mt-5">
+            <a href="#" class="btn btn-outline-primary fw-semibold">View More
+              Projects</a>
+          </div>
+
+          <div class="spacer"></div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!-- Contact Section -->
+
+      <section class="container-fluid contact col-sm-12 pt-5 d-flex flex-column align-items-center "  id="contact">
+
+        <h2 class="fw-bold fs-2 pt-3">Contact Me</h2>
+
+        <div class="row">
+
+          <form action="#" class="d-flex flex-column pt-5 pb-5 contact-form"
+            style="width: 22rem; gap: 12px;">
+
+            <!-- Name -->
+            <div>
+              <label for="name" class="form-label">Full Name <span
+                  class="required">*</span> </label>
+              <input id="name" required class="form-control" type="text"
+                placeholder="Enter your full name" minlength="3" maxlength="30">
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="form-label">Email <span
+                  class="required">*</span> </label>
+              <input id="email" required name="name" class="form-control"
+                type="text"
+                placeholder="Enter your email" minlength="4" maxlength="30">
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label for="phone" class="form-label">Phone Number <span
+                  class="required">*</span> </label>
+              <input id="phone" required name="phone" class="form-control"
+                type="tel"
+                placeholder="Eg: 9754561235" pattern="[0-9]{10}">
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject"
+                class="form-control"
+                placeholder="What is this about?" minlength="4" maxlength="30">
+            </div>
+
+            <!--  Message -->
+            <div>
+              <label for="message" class="form-label">Your Message <span
+                  class="required">*</span> </label>
+              <textarea class="form-control" required name="message" rows="3"
+                id="message"
+                placeholder="Write your message here..." minlength="2"
+                maxlength="300"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary fw-semibold">Send
+              Message</button>
+
+          </form>
+
+        </div>
+
+        <div class="spacer2"></div>
+      </section>
+
+    </main>
+
+    <!-- Footer Navigation -->
+    <div class="container-fluid footer-container">
+      <div class="container ftr-cntr">
+        <footer class="row g-5 justify-content-center p-5">
+
+          <!-- Footer Social Links -->
+          <div class="col-lg-3 mb-3 col-md-6 logo-about">
+            <div class="ft-logo"><a
+                class="logo navbar-brand me-auto fs-4 fw-bold"
+                href="index.html">Joyal
+                Designs</a></div>
+            <p
+              class="text-justify">"I'm Joyal, a passionate graphic and web designer dedicated to crafting clean, functional, and visually compelling digital experiences."</p>
+
+          </div>
+
+          <!-- Footer Navigation -->
+          <div class="col-lg-1 mb-2 "></div>
+
+          <div class="col-lg-2 mb-2 col-md-4 footer-links">
+            <h5>Navigation</h5>
+            <ul class="nav flex-column">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Social Links -->
+          <div class="col-lg-2 mb-2 col-md-4 footer-links">
+            <h5>Find me on</h5>
+            <ul class="nav flex-column">
+              <li><a
+                  href="https://www.instagram.com/joyal.designs/"
+                  target="_blank">Instagram</a></li>
+              <li><a
+                  href="https://dribbble.com/inkdripdesigns"
+                  target="_blank">Dribbble</a></li>
+              <li><a
+                  href="https://www.behance.net/inkdrip_designs"
+                  target="_blank">Behance</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Resources -->
+          <div class="col-lg-2 mb-2 col-md-4 footer-links">
+            <h5>Resources</h5>
+            <ul class="nav flex-column">
+              <li><a href="#">Freebies</a></li>
+              <li><a href="#">Plugins</a></li>
+              <li><a href="#">Resource Pack</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-fluid p-2 copyright-signature">
+      <p>&copy; 2025 Joyal Designs. All rights reserved.</p>
+      <p class="text-center">Built with <a
+          href="https://getbootstrap.com/" target="_blank">Bootstrap
+          v5.3</a></p>
+      <p>Designed & Developed with ❤️ by Joyal</p>
 
     </div>
-  </nav>
 
-</header>
+    <!-- Bootstrap JavaScript Linking -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 
-<main>
-
-
-  <div class="hero-section container mt-5 pt-5 text-center d-flex flex-column justify-content-center align-items-center">
-    <h1 class="text-center lh-1 ">WANNA KNOW ABOUT ME</h1>
-    <p class="text-center fw-medium" style="max-width: 470px;">Hi, <strong>I’m Joyal.</strong> A designer who blends
-      creativity and functionality to bring <strong>ideas to
-        life</strong> through engaging and
-      <strong>meaningful design.</strong>
-    </p>
-  </div>
-
-</main>
-
-
-
-<!-- Bootstrap Java Script Linking -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 
 </html>
